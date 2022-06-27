@@ -1,2 +1,31 @@
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
+
+En la actualidad los algoritmos de aprendizaje automático están siendo aplicados en disimilies areas de la vida humana. Es comun encontrarlos aplicados en sistemas de recomendacion de compras, aplicaciones de citas, solicitudes de prestamos, contratacion personal y muchas otras areas.  A raiz de ello, ha surgido un creciete interes en estudiar las potencialidades y limitaciones de los modelos de aprendizaje automatico, asi como las posibles implicaciones de confiar ciegamente en sus predicciones.
+
+En particular, su incorporacion a tareas de toma de decisiones de alto riesgo ha dirigido la atencion de muchos investigadores hacia una nueva interrogante: ¿estaran siendo "justos" los algoritmos de aprendizaje automatico al tomar sus decisiones?
+
+En este escenario, ha ganado popularidad el desarrollo de tecnicas para detectar y mitigar los sesgos en colecciones de datos y algoritmos de aprendizaje automatico. Tales herramientas son cruciales para desarrollar sistemas de toma de decisiones mas justos. Los estudios orientados hacia la equidad en algoritmos de aprendizaje automatico se enfocan principalmente en desarrollar tecnicas que consideren tanto la precision como la equidad de los modelos.
+
+\section*{Motivación}
+
+Un modelo de aprendizaje de maquina se entrena con el objetivo de optimizar una unica metrica, en la mayoria de los casos la precision. Esto significa que los modelos aprenden muy bien los patrones que se presentan en los datos de entrenamiento, incluyendo aquellos patrones que representan sesgos y prejuicios que estan desafortunadamente presente en la sociedad y por ende en los datos recopilados, en algunos casos incluso amplifican estos patrones negativos. Son varias la tecnicas que se han explorado para resolver este problema, algunas se enfocan en un preprocesamiento de los datos para eliminar aquellos elementos que puedan inducir un sesgo en el modelo, otras realizan variacinoes en el metodo de entrenamiento con el mismo objetivo. Sin embargo permanece relativamente poco explorado el uso de tecnicas de optimizacion multiobjetivo que permitan al modelo optimizar hasta encontrar un buen balance entre cuan justo es y cuan preciso.
+
+Otra tecnica que ha demostrado ser de gran utilidad en la prevencion de los sesgos en los modelos de aprendizaje de maquina es la construccion de ensamblados de multiples modelos que maximizan la varianza entre si, por lo que se minimiza el sesgo del ensamblado final.
+
+\section*{Problematica}
+
+A pesar de que existe AutoGOAL, una biblioteca de AutoML, que permite obtener modelos para resolver problemas arbitrarios utilizando entre otras tecnicas aprendizaje de maquina. No existe una biblioteca o herramienta que permita resolver de principio a fin un problema de clasificacion utilizando aprendizaje de maquina y donde exita alguna garantia de que el modelo aprendido sea justo.
+
+\section*{Objetivo general}
+
+Proponer una herramienta que permita resolver problemas de clasificacion utilizando aprendizaje de maquina y que permita garantizar que el modelo aprendido sea justo.
+
+\section*{Objetivos especifico}
+
+\begin{itemize}
+    \item Encontrar modelos que maximicen la varianza para minimizar el sesgo.
+    \item Metodos basados en metaheuristicas para optimizar los modelos utilizando simultaneamente metricas de equidad y precision.
+    \item Explorar adicion de optimizacion multiobjetivo a AutoGOAL para que el modelo aprendido sea justo.
+    \item Metodos basados en la combinacion de diferentes metricas en una sola, para poder aprovechar los multiples metodos de optimizacion que existen.
+\end{itemize}

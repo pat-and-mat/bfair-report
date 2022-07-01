@@ -74,11 +74,10 @@
 	\chapter*{Introducción}\label{chapter:introduction}
 	\addcontentsline{toc}{chapter}{Introducción}
 	
-	El aumento de la importancia y el área de uso de los algoritmos de aprendizaje automático ha alcanzado un nivel en el que estos forman parte de la vida diaria de las personas (a veces sin que las mismas lo perciban). Esto ha influido en el interés por parte de la comunidad científica en estudiar a fondo dichos algoritmos, sus ventajas y limitaciones. La popularidad y la influencia en la vida diaria humana han llevado a varias preocupaciones ¿Hasta que punto podemos confiar en las decisiones tomadas por una máquina entrenada por un algoritmo de aprendizaje automático? ¿Cómo podemos saber que las decisiones que toma esta máquina son justas? Se puede entender como justicia o equidad a la ausencia de favoritismo o prejuicios hacia un individuo o grupo, basado en características inherentes o adquiridas.\\
+	Los algoritmos de aprendizaje automático han ido ganando  relevancia en los últimos años, hasta llegar a convertirse en una tecnología habitual al resolver tareas de la vida cotidiana. Tal es así, que muchas veces los algoritmos de aprendizajes automático pasan desapercibidos por los usuarios finales de los productos que usan la tecnología. Esto ha influido en el interés por parte de la comunidad científica en estudiar a fondo dichos algoritmos, sus ventajas y limitaciones. La popularidad y la influencia en la vida diaria humana han llevado a varias preocupaciones ¿Hasta que punto podemos confiar en las decisiones tomadas por una máquina entrenada por un algoritmo de aprendizaje automático? ¿Cómo podemos saber que las decisiones que toma esta máquina son justas? Se puede entender como justicia o equidad a la ausencia de favoritismo o prejuicios hacia un individuo o grupo, basado en características inherentes o adquiridas.\\
 	Los algoritmos usan conjuntos de datos sacados de las sociedades humanas, por tanto, los sesgos existentes en estas pueden potencialmente verse reflejados en las decisiones tomadas por la máquina entrenada. Estos sesgos pueden, incluso, verse amplificados.\\
 	Lo anterior deja ver la importancia que tiene para la sociedad el estudio de las formas de eliminación de los sesgos, ya sean, entre muchos otros, raciales o de género. La responsabilidad de esto cae en manos de los desarrolladores y el presente trabajo pretende dar ciertos aportes a la solución de dicho problema. Un ejemplo claro del riesgo de ignorar lo anterior es la popularización de representaciones semánticas pre-entrenadas en registros históricos, contenedores de sesgos sociales.\\
-	En los últimos años ha crecido el interés por el desarrollo de técnicas que permitan identificar y eliminar los sesgos en algoritmos de aprendizaje automático, pero que mantengan al mismo tiempo la precisión de los modelos.\\
-	
+	En los últimos años ha crecido el interés por el desarrollo de técnicas que permitan identificar y eliminar los sesgos en algoritmos de aprendizaje automático, pero que mantengan al mismo tiempo la precisión de los modelos.\\	
 	Una de las principales desventajas del Aprendizaje de Máquina es el nivel de preparación que tiene que
 	tener un investigador o ingeniero para sacar provecho de las técnicas en problemas reales.
 	Para ello se han venido explorando muy recientemente alternativas que permitan
@@ -88,7 +87,7 @@
 	ágil. A este tipo de técnicas se les conoce como técnicas de AutoML y están jugando un
 	papel fundamental en la democratización de la inteligencia artificial y el aprendizaje de
 	máquinas.\\
-	Como parte de este trabajo se pretende utilizar una biblioteca de AutoML llamada AutoGoal, para asistir en el objetivo fundamental de
+	Finalmente, el objetivo fundamental de el presente trabajo es
 	obtener un método basado en ensembles que permita construir modelos con alta precisión
 	para problemas de clasificación. Poniendo énfasis en la explotación de la diversidad entre los
 	integrantes de los ensembles y permitiendo la optimización de mas de una métrica, abriendo
@@ -103,7 +102,8 @@
 	
 	\section*{Problematica}
 	
-	A pesar de que existe AutoGOAL, una biblioteca de AutoML, que permite obtener modelos para resolver problemas arbitrarios utilizando entre otras tecnicas aprendizaje de maquina. No existe una biblioteca o herramienta que permita resolver de principio a fin un problema de clasificacion utilizando aprendizaje de maquina y donde exita alguna garantia de que el modelo aprendido sea justo.
+	Las propuestas actuales para medir y mitigar sesgos en busca de justicia, presentan varias limitaciones desde el punto de vista de aplicación a problemas arbitrarios. En específico, existen pocas propuestas que generen una solución end-to-end a problemas arbitrarios, y las que existen trabajan con una colección limitada de técnicas de mitigación o son aplicables a dominios limitados. El enfoque basado en ensemble de nuestra propuesta trae algunas ventajas adicionales.\\
+	En particular, permanecen poco explorados los enfoques multi-objetivo para la obtención de modelos justos y precisos.
 	
 	\section*{Objetivo general}
 	

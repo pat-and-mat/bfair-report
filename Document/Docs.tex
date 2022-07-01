@@ -1,3 +1,80 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage{url}
+\urldef{\mailsa}\path|{alfred.hofmann, ursula.barth, ingrid.haas, frank.holzwarth,|
+\urldef{\mailsb}\path|anna.kramer, leonie.kunz, christine.reiss, nicole.sator,|
+\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|    
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Mitigación de sesgos con ensembles y
+	optimización multiobjetivo}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{SRI}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Rodrigo García, Jorge Mederos}
+%
+\authorrunning{SRI}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{MATCOM, Universidad de La Habana, Cuba\\
+\url{http:/matcom.uh.cu}}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+\toctitle{Mitigación de sesgos con ensembles y
+	optimización multiobjetivo}
+\tocauthor{Rodrigo García, Jorge Mederos}
+\maketitle
+
+
+\begin{abstract}
+Abstract
+\keywords{keywords}
+\end{abstract}
+
+
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
 
@@ -36,11 +113,23 @@ A pesar de que existe AutoGOAL, una biblioteca de AutoML, que permite obtener mo
 
 Proponer una herramienta que permita resolver problemas de clasificacion utilizando aprendizaje de maquina y que permita garantizar que el modelo aprendido sea justo.
 
-\section*{Objetivos especifico}
+\section*{Objetivos especificos}
 
 \begin{itemize}
-    \item Encontrar modelos que maximicen la varianza para minimizar el sesgo.
-    \item Metodos basados en metaheuristicas para optimizar los modelos utilizando simultaneamente metricas de equidad y precision.
-    \item Explorar adicion de optimizacion multiobjetivo a AutoGOAL para que el modelo aprendido sea justo.
-    \item Metodos basados en la combinacion de diferentes metricas en una sola, para poder aprovechar los multiples metodos de optimizacion que existen.
+	\item Encontrar modelos que maximicen la varianza para minimizar el sesgo.
+	\item Metodos basados en metaheuristicas para optimizar los modelos utilizando simultaneamente metricas de equidad y precision.
+	\item Explorar adicion de optimizacion multiobjetivo a AutoGOAL para que el modelo aprendido sea justo.
+	\item Metodos basados en la combinacion de diferentes metricas en una sola, para poder aprovechar los multiples metodos de optimizacion que existen.
 \end{itemize}
+
+\section*{Conclusiones}
+
+
+\begin{thebibliography}{4}
+	
+	\bibitem{1} bib
+	
+\end{thebibliography}
+
+
+\end{document}

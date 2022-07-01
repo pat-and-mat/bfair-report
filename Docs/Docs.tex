@@ -147,11 +147,23 @@
 	relativa entre pares de clasificadores en vez de la diversidad de todo el conjunto.
 	
 	\subsection*{Ensamblado de los modelos utilizando multiples criterios}
+
+    Existen diferentes metodos en la literatura para resolver el problema de optimizacion multiobjetivo,
+    en particular en este caso la funcion a optimizar es una funcion extremadamente costosa de evaluar,
+    dado que cada punto en nuestro espacio de busqueda es un modelo, el cual debemos entrenar y evaluar
+    en el dataset para poder obtener su evaluacion en las metricas. Existe metodos de muy buena calidad
+    que cumple con esta restriccion, vease [3]. Sin embargo estos metodos asumen en muchas ocasiones
+    características del dominio de las funciones que se estan optimizando, como por ejemplo asumen
+    continuidad o estar en R^n. Nuestro espacio sin embargo no tiene ninguna de estas caracteristicas,
+    nuestro espacio consiste de vectores que codifican las decisiones y parametros que definen un metodo de
+    ensemble, es muy dificil intentar codificar este espacio en algo similar a los naturales o los reales
+    sin tener problemas de dimensionalidad.
 	
-	Para la construcción del ensemble a partir de los modelos obtenidos en la primera fase se utiliza un
-	hibrido entre Probabilistic Gramatical Evolution y NSGA-II. En particular tomamos los metodos de
-	Non-dominated Sorting y Crowding Distance de NSGA-II y los incorporamos a Probabilistic Gramatical
-	Evolution, en particular al paso de decidir los individuos que pasan a la siguiente generacion.
+	Por lo explicado anteriormente, para la construcción del ensemble a partir de los modelos obtenidos
+    en la primera fase se utiliza un hibrido entre Probabilistic Gramatical Evolution y NSGA-II. En
+    particular tomamos los metodos de Non-dominated Sorting y Crowding Distance de NSGA-II y los
+    incorporamos a Probabilistic Gramatical Evolution, en particular al paso de decidir los individuos
+    que pasan a la siguiente generacion.
 	
 	Non-dominated Sorting consiste en ordenar los individuos de forma tal que sean priorizados aquellos
 	individuos que sean dominados por la menor cantidad de individuos de la población. Donde un individuo
@@ -165,6 +177,7 @@
 		
 		\bibitem{1} Tang, E. K. and Suganthan, P. N. and Yao, X. An analysis of diversity measures. Machine Learning. 2006.
 		\bibitem{2} Gao Huang and Yixuan Li and Geoff Pleiss and Zhuang Liu and John E. Hopcroft and Kilian Q. Weinberger. Snapshot Ensembles: Train 1, get {M} for free. CoRR. 2017,
+        \bibitem{3} Syrine Belakaria, Aryan Deshwal, Janardhan Rao Doppa. Max-value Entropy Search for Multi-Objective Bayesian Optimization.
 		
 	\end{thebibliography}
 	

@@ -128,7 +128,7 @@
 	\subsection*{Generación de modelos con diversidad alta para una tarea determinada}
 	
 	Para esta fase utilizamos una tecnica que puede pensarse como una generalización basada en AutoML de
-	la idea presentada en \cite{SnapshotEnsembles}. En particular se utiliza una modificacion de
+	la idea presentada en [2]. En particular se utiliza una modificacion de
 	Probabilistic Gramatical Evolution Search que permite controlar características de la población como
 	por ejemplo en este caso mantener en todo momento las n soluciones mas diversas que se han explorado
 	durante el proceso de busqueda. Esto se logra manteniendo en cada generacion del algoritmo los n mejores
@@ -143,7 +143,7 @@
 	que todos los clasificadores son asignados un rank.
 	
 	Para computar la diversidad relativa entre un par de clasificadores se utiliza una de las metricas
-	de diversidad descritas en \cite{DiversityMeassures}, ajustada de forma que refleje la diversidad
+	de diversidad descritas en [1], ajustada de forma que refleje la diversidad
 	relativa entre pares de clasificadores en vez de la diversidad de todo el conjunto.
 	
 	\subsection*{Ensamblado de los modelos utilizando multiples criterios}
